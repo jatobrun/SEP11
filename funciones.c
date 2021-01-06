@@ -8,7 +8,7 @@ void recibir_encender_led(){
 	 serial_println_str("encendido");
 	PORTB |=  (1<<PB5);
 	 }else{
-
+		 	PORTB |=  (1<<PB5);
            serial_println_str("apagado");
 	 PORTB &= ~(1<<PB5); 
 }}}
