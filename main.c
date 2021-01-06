@@ -6,8 +6,7 @@ int main()
 pin_init();
 serial_begin();
    while (1){
-	PORTB |= (1<<5);
-//recibir_encender_led();
+recibir_encender_led();
 //serial_print_str("3");
 //serial_println_str("4,5,9");
 

@@ -6,11 +6,11 @@ void recibir_encender_led(){
 	if (get_RX_buffer()[0]=='H' && get_RX_buffer()[1]==0){
 
 	 serial_println_str("encendido");
-	PORTB =  (1<<PB0);
+	PORTB |=  (1<<PB5);
 	 }else{
 
            serial_println_str("apagado");
-	 PORTB &= ~(1<<PB0); 
+	 PORTB &= ~(1<<PB5); 
 }}}
 
 void recibirint(){
