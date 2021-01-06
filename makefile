@@ -2,7 +2,7 @@ FILENAME   = main
 FILENAME2  = config
 FILENAME3  = funciones
 FILENAME4  = uart
-PORT       = /dev/cu.usbserial-00000000
+PORT       = /dev/ttyACM0 
 DEVICE     = atmega328p
 PROGRAMMER = arduino
 BAUD       = 115200
@@ -26,5 +26,7 @@ upload:
 clean:
 	rm $(FILENAME).o
 	rm $(FILENAME2).o
+	rm $(FILENAME3).o
+	rm $(FILENAME4).o
 	rm $(FILENAME).elf
 	rm $(FILENAME).hex
